@@ -19,10 +19,13 @@
         .justify-content-end{
             padding-bottom: 2em;
         }
+        .nav-link.active{
+            background-color: white;
+        }
     </style>
 </head>
 <body>
-    <header id="cabecalho">
+    <header id="header">
         <div class="navbar navbar-expand-lg " >
             <div class="container">
                 <h1>Louja</h1>
@@ -32,43 +35,45 @@
                 <nav class="collapse navbar-collapse justify-content-end" id="menu">
                     <ul class="nav navbar-nav nav-pills">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active"  >Inicio</a>
+                            <a href="#inicio" class="nav-link active"  >Inicio</a>
                         </li>
                         
                         <li class="nav-item">
-                            <a href="#" class="nav-link" >Albuns</a>
+                            <a href="#albuns" class="nav-link" >Albuns</a>
                         </li>
+                        
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <div data-bs-spy="scroll" data-bs-target="#header">
         <section id="inicio">
-            <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div data-bs-internal="2500" class="carousel-item active">
-                        <img class="d-block w-100 img-slide"  src="img/bi2.jpg" alt="">
+            <div class="">
+                <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-internal="2500" class="carousel-item active">
+                            <img class="d-block w-90 img-slide"  src="img/bi2.jpg" alt="">
+                        </div>
+                        <div data-bs-internal="2400" class="carousel-item">
+                            <img class="d-block w-100 img-slide"  src="img/bi3.jpg" alt="">
+                        </div>
+                        <div data-bs-internal="2500" class="carousel-item">
+                            <img class="d-block w-100 img-slide" src="img/bit.jpg" alt="">
+                        </div>
                     </div>
-                    <div data-bs-internal="2400" class="carousel-item">
-                        <img class="d-block w-100 img-slide"  src="img/bi3.jpg" alt="">
-                    </div>
-                    <div data-bs-internal="2500" class="carousel-item">
-                        <img class="d-block w-100 img-slide" src="img/bit.jpg" alt="">
-                    </div>
+                    <button data-bs-target="#carousel-exemplo"  data-bs-slide="prev" class="carousel-control-prev"  type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-exemplo" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0" ></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1" ></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2" ></button>
+                    </div>    
                 </div>
-                <button data-bs-target="#carousel-exemplo"  data-bs-slide="prev" class="carousel-control-prev"  type="button">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-exemplo" type="button">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0" ></button>
-                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1" ></button>
-                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2" ></button>
-                </div>    
             </div>
             <div class="container ctn-main">
                 <img src="https://preview.redd.it/qual-a-sua-opini%C3%A3o-sobre-o-yun-li-v0-yrma9g3w1qdc1.jpeg?auto=webp&s=8cfdd95faacc1e61e6c7b1c2a993c02a5136eba5" alt="">
@@ -151,6 +156,11 @@
                         </div>
                     </div>
             </div>
+        </section>
+        <section id="footer">
+            <footer class="container">
+                <p>by  Guilherme-Gns-pixel</p>
+            </footer>
         </section>
     </div>
     

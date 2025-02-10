@@ -9,6 +9,7 @@
     margin-top: 2em;
     
 }
+
 .container .ctn-main{
     padding-top: 1em;
 }
@@ -25,10 +26,14 @@
 .row{
     margin-top:50px ;
 }
+.card{
+    margin-bottom: 1em;
+}
 .card-header{
     text-transform: uppercase;
     text-align: center;
 }
+
 .col-4 {
     margin-top: 1em;
 }
@@ -40,9 +45,19 @@ header{
     position: sticky;
     top: 0;
     left: 0;
-    background-color: #ffffff;
+    color: white;
     z-index: 1 ;
-    nav-index: 1;
+    background-color: rgb(56, 56, 252);
+}
+.carousel{
+    z-index: 0;
+}
+#footer{
+    text-align: center;
+    padding: 1em;
+    background-color: rgb(56, 56, 252);
+    color: white;
+    
 }
 @media screen and (max-width: 767px) {
     .ctn-main {
